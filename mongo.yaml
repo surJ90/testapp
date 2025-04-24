@@ -1,14 +1,4 @@
 services:
-  app:
-    build: .
-    ports:
-    - 3000:5050
-    depends_on:
-    - mongo
-    environment:
-      MONGO_DB_USERNAME: admin
-      MONGO_DB_PASSWORD: qwerty
-
   mongo:
     image: mongo
     ports:
